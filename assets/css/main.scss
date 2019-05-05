@@ -4,10 +4,32 @@
 @import "bootstrap/bootstrap";
 @import "fiat_ui";
 
+.text-title {
+  font-family: $title;
+}
+
 nav {
   &.navbar {
-    background: rgba(0,0,0,0.2);
+    transition: 0.3s all ease-in-out;
     margin-bottom: -100px;
+    &.darkened {
+      background: rgba(255,255,255,1);
+      .navbar-brand {
+        color: $charcoal;
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $charcoal;
+          }
+        }
+      }
+    }
+    .navbar-brand {
+      font-family: $title;
+      font-size: 3rem;
+      line-height: 3rem;
+    }
     .navbar-nav {
       .nav-item {
         .nav-link {
@@ -51,19 +73,23 @@ nav {
 }
 
 header {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding: 0;
   @include media-breakpoint-down(xs) {
     padding-top: 50px;
   }
-  &#welcome {
+  .mask {
+    padding-top: 250px;
+    padding-bottom: 300px;
     h1 {
-      font-size: 6rem;
+      transition: 0.3s all ease-in-out;
+      font-family: $title;
+      font-size: 10rem;
+      line-height: 9rem;
       // font-style: italic;
       font-weight: 700;
       &.subtitle {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 4rem;
+        line-height: 3rem;
       }
     }
   }
@@ -71,4 +97,17 @@ header {
 
 .callout {
   font-family: $header;
+}
+
+.table {
+  font-family: $header;
+  &.list {
+    tr {
+      background: transparent;
+    }
+  }
+}
+
+.footer {
+  background: $gray;
 }
