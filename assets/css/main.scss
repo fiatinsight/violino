@@ -105,18 +105,31 @@ header {
 }
 
 #welcome {
-  background-image: url({{ 'assets/images/prosciutto-dish.jpg' | relative_url }});
-  background-size: 100%;
-  background-attachment: fixed;
-  @include media-breakpoint-down(xs) {
-    background-size: cover;
-    background-position: -500px;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+  header {
+    background-image: url({{ 'assets/images/prosciutto-dish.jpg' | relative_url }});
+    background-size: 100%;
+    background-attachment: fixed;
+    @include media-breakpoint-down(xs) {
+      background-size: cover;
+      background-position: -500px;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+    }
   }
 }
 
 #menu {
+  header {
+    background-image: url({{ 'assets/images/pasta-cooking.jpg' | relative_url }});
+    background-size: 100%;
+    background-attachment: fixed;
+    @include media-breakpoint-down(xs) {
+      background-size: cover;
+      background-position: -500px;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+    }
+  }
   .callout {
     h2 {
       font-size: 4rem;
