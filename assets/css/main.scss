@@ -14,6 +14,7 @@ nav {
     margin-bottom: -100px;
     &.darkened {
       background: rgba(255,255,255,1);
+      border-bottom: 1px solid $light_gray;
       .navbar-brand {
         color: $charcoal;
       }
@@ -95,6 +96,17 @@ header {
   }
 }
 
+#menu {
+  .callout {
+    h2 {
+      font-size: 4rem;
+    }
+    h4 {
+      font-size: 3rem;
+    }
+  }
+}
+
 .callout {
   font-family: $header;
 }
@@ -109,5 +121,20 @@ header {
 }
 
 .footer {
-  background: $gray;
+  background: $light_gray;
+  p {
+    color: $gray;
+  }
+}
+
+.btn {
+  &.btn-dark {
+    background: $charcoal;
+    border: 1px solid $charcoal;
+    &:hover {
+      background: $charcoal;
+      border: 1px solid $charcoal;
+      opacity: .9;
+    }
+  }
 }
