@@ -76,7 +76,7 @@ nav {
 header {
   padding: 0;
   @include media-breakpoint-down(xs) {
-    padding-top: 50px;
+    padding-top: 0;
   }
   .mask {
     padding-top: 250px;
@@ -88,11 +88,31 @@ header {
       line-height: 9rem;
       // font-style: italic;
       font-weight: 700;
+      @include media-breakpoint-down(xs) {
+        font-size: 8rem;
+        line-height: 7rem;
+      }
       &.subtitle {
         font-size: 4rem;
         line-height: 3rem;
+        @include media-breakpoint-down(xs) {
+          font-size: 3rem;
+          line-height: 2rem;
+        }
       }
     }
+  }
+}
+
+#welcome {
+  background-image: url({{ 'assets/images/prosciutto-dish.jpg' | relative_url }});
+  background-size: 100%;
+  background-attachment: fixed;
+  @include media-breakpoint-down(xs) {
+    background-size: cover;
+    background-position: -500px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
   }
 }
 
@@ -109,6 +129,9 @@ header {
 
 .callout {
   font-family: $header;
+  @include media-breakpoint-down(xs) {
+    padding: 0;
+  }
 }
 
 .table {
