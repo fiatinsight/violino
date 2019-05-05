@@ -1,0 +1,74 @@
+---
+---
+
+@import "bootstrap/bootstrap";
+@import "fiat_ui";
+
+nav {
+  &.navbar {
+    background: rgba(0,0,0,0.2);
+    margin-bottom: -100px;
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-family: $header;
+          font-size: .8rem;
+          font-weight: 700;
+          padding: 1rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          &:hover {
+            opacity: 0.8;
+            border: 0;
+          }
+        }
+        &.dropdown {
+          .dropdown-menu {
+            background: $white;
+            border-radius: 0;
+            .dropdown-item {
+              color: $dark_gray;
+              margin: 0 0;
+              border-left: 3px solid transparent;
+              &:hover {
+                border: none;
+                border-left: 3px solid $blue;
+              }
+              &:active {
+                background: $light_gray;
+                color: $dark_gray;
+              }
+              .svg-inline--fa {
+                margin-right: 8px;
+                color: $gray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  @include media-breakpoint-down(xs) {
+    padding-top: 50px;
+  }
+  &#welcome {
+    h1 {
+      font-size: 6rem;
+      // font-style: italic;
+      font-weight: 700;
+      &.subtitle {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+.callout {
+  font-family: $header;
+}

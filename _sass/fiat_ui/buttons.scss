@@ -1,0 +1,53 @@
+// Button styles
+
+.btn {
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  .svg-inline--fa {
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+  }
+  &.btn-round {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.85rem; // This accounts for FontAwesome icons 'sliding' down
+    border-radius: 50%;
+  }
+  &.btn-primary {
+    background: $blue;
+    border: 1px solid $blue;
+    &:hover {
+      background: $blue;
+      border: 1px solid $blue;
+      opacity: .9;
+    }
+  }
+  &.btn-success {
+    background: $green;
+    border: 1px solid $green;
+    &:hover {
+      background: $green;
+      border: 1px solid $green;
+      opacity: .9;
+    }
+  }
+  &.btn-link {
+    background: transparent;
+    border: 1px solid transparent;
+    color: $dark_gray;
+    font-weight: bold;
+    &:hover,
+    &.active {
+      background: $light_gray;
+      border: 1px solid $light_gray;
+      text-decoration: none;
+    }
+  }
+}

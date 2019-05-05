@@ -1,0 +1,157 @@
+// Type-related styles
+
+html {
+  font-size: 16px;
+}
+
+@include media-breakpoint-down(xs) {
+  html {
+    font-size: 15px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header;
+  font-weight: bold;
+  color: $dark_gray;
+  .blue {
+    color: $blue;
+  }
+  .svg-inline--fa {
+    opacity: 0.5;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-family: $body;
+}
+
+.desc {
+  padding: 20px;
+  background: $blue_gray;
+  margin: 20px 0;
+  border-radius: 5px;
+  position: relative;
+  &.red {
+    background: $light_red;
+    color: $red;
+  }
+  &.yellow {
+    background: $yellow;
+    color: $dark_gray;
+  }
+  &.green {
+    background: $green;
+    color: $white;
+  }
+  a {
+    color: $black;
+    border-bottom: 2px solid $gray;
+    &:hover:not(.btn) {
+      color: $charcoal;
+      border-bottom: 2px solid $charcoal;
+    }
+  }
+}
+
+.announcement {
+  margin: 20px 0;
+  position: relative;
+  border-radius: 5px;
+  .icon {
+    background: $light_gray;
+    color: $dark_gray;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    align-items: center !important;
+    display: flex !important;
+    .svg-inline--fa {
+      opacity: 0.7;
+      margin: auto;
+    }
+    &.green {
+      background: $green;
+      color: $white;
+    }
+    &.yellow {
+      background: $yellow;
+      color: $charcoal;
+    }
+    &.blue {
+      background: $blue;
+      color: $white;
+    }
+    &.red {
+      background: $red;
+      color: $white;
+    }
+  }
+  .text {
+    background: transparent;
+    color: $dark_gray;
+    padding: 15px 20px;
+    // border: 1px solid $light_gray;
+    // border-left: none;
+    border-radius: 0 5px 5px 0;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
+.flash {
+  padding: 10px;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  &.notice {
+    background: $blue;
+    color: $white;
+  }
+  &.alert {
+    background: $red;
+    color: $white;
+  }
+  &.svg-inline--fade {
+    opacity: 0;
+  }
+}

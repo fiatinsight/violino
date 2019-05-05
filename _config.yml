@@ -1,0 +1,11 @@
+# Site Settings
+title: Violino Ristorante Italiano
+url: https://violinoristorante.com
+enforce_ssl: violinoristorante.com
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+permalink: /:title/
+kramdown:
+  input: GFM

@@ -1,0 +1,47 @@
+.modal {
+  .modal-dialog {
+    &.w-80 {
+      max-width: 80%;
+    }
+    &.w-100 {
+      max-width: 100%;
+    }
+    max-width: 600px;
+    margin-top: 100px;
+    background: $white;
+    pointer-events: all;
+    .modal-content {
+      background: transparent;
+      border: none;
+    }
+    .modal-header {
+      position: relative;
+      border: none;
+      height: 15px;
+      .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    }
+    .modal-body {
+      padding: 50px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .modal {
+    .modal-dialog {
+      padding: 1rem;
+      margin-top: .5rem;
+      max-width: 100% !important;
+      .modal-body {
+        padding: 0;
+        padding-bottom: 1rem;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  }
+}

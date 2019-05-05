@@ -1,0 +1,191 @@
+// Top-level layout styling for large elements on pages
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: $body;
+}
+
+.turbolinks-progress-bar {
+  height: 3px;
+  background-color: $blue;
+}
+
+section {
+  position: relative;
+  &.page {
+    flex: 1;
+  }
+  .billboard {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .mask {
+      h1 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .diagonals {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: rotate(-12deg);
+    transform: skewy(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    span {
+      height: 180px;
+      position: absolute;
+    }
+    :first-child {
+      width: 33.33333%;
+      left: -16.66666%;
+    }
+    :nth-child(2) {
+      width: 33.33333%;
+      top: 0;
+      left: 16.66666%;
+      right: auto;
+    }
+    :nth-child(3) {
+      width: 33.33333%;
+      left: 49.99999%;
+      bottom: auto;
+    }
+    :nth-child(4) {
+      width: 33.33333%;
+      top: 380px;
+      right: -16.66666%;
+    }
+    :nth-child(5) {
+      width: 33.33333%;
+      bottom: 0;
+    }
+    :nth-child(6) {
+      width: 3%;
+      bottom: 0;
+      left: 30.66666%;
+      right: auto;
+    }
+    &.white {
+      background: linear-gradient(150deg, rgb(245,245,250) 15%, rgb(250,250,255) 70%, rgb(255,255,255) 94%);
+      :first-child {
+        background: rgb(244,244,247);
+      }
+      :nth-child(2) {
+        background: rgb(245,250,253);
+      }
+      :nth-child(3) {
+        background: rgb(230,230,230);
+      }
+      :nth-child(4) {
+        background: rgb(240,240,240);
+      }
+      :nth-child(5) {
+        background: rgb(230,230,230);
+      }
+    }
+    &.blue {
+      background: linear-gradient(150deg, #6083fc 15%, #a7aeff 60%, #affcf4 98%);
+      :first-child {
+        background: #6a80fc;
+      }
+      :nth-child(2) {
+        background: #737eff;
+      }
+      :nth-child(3) {
+        background: #6c6cfb;
+      }
+      :nth-child(4) {
+        background: #afd4f8;
+      }
+      :nth-child(5) {
+        background: #9191ff;
+      }
+      :nth-child(6) {
+        background: #a3a7ff;
+      }
+    }
+    &.teal {
+      background: linear-gradient(150deg, rgb(153,255,220) 15%, rgb(173,255,240) 60%, rgb(200,255,255) 98%);
+      :first-child {
+        background: rgb(145,253,218);
+      }
+      :nth-child(2) {
+        background: rgb(170,255,230);
+      }
+      :nth-child(3) {
+        background: rgb(145,253,218);
+      }
+      :nth-child(4) {
+        background: rgb(145,253,218);
+      }
+      :nth-child(5) {
+        background: rgb(145,253,218);
+      }
+      :nth-child(6) {
+        background: rgb(170,255,230);
+      }
+    }
+    &.pink {
+      background: linear-gradient(150deg, rgb(252,201,235) 15%, rgb(253,231,250) 70%, rgb(255,240,254) 94%);
+      :first-child {
+        background: rgb(253,195,230);
+      }
+      :nth-child(2) {
+        background: rgb(252,203,237);
+      }
+      :nth-child(3) {
+        background: rgb(253,195,230);
+      }
+      :nth-child(4) {
+        background: rgb(252,203,237);
+      }
+      :nth-child(5) {
+        background: rgb(252,203,237);
+      }
+    }
+    &.black {
+      background: linear-gradient(150deg, rgb(20,20,20) 15%, rgb(253,231,250) 70%, rgb(255,240,254) 94%);
+      :first-child {
+        background: rgb(253,195,230);
+      }
+      :nth-child(2) {
+        background: rgb(252,203,237);
+      }
+      :nth-child(3) {
+        background: rgb(253,195,230);
+      }
+      :nth-child(4) {
+        background: rgb(252,203,237);
+      }
+      :nth-child(5) {
+        background: rgb(252,203,237);
+      }
+    }
+  }
+}
+
+header {
+  padding-top: 150px;
+  @include media-breakpoint-down(xs) {
+    padding-top: 50px;
+  }
+}
+
+.footer {
+  font-family: $body;
+  z-index: 5;
+  background: $light_gray;
+  p {
+    color: $gray;
+  }
+}
