@@ -106,7 +106,7 @@ header {
 
 #welcome {
   header {
-    background-image: url({{ 'assets/images/prosciutto-dish.jpg' | relative_url }});
+    background-image: url('https://violino.s3.amazonaws.com/IMG_7033.jpg');
     background-size: 100%;
     background-attachment: fixed;
     @include media-breakpoint-down(xs) {
@@ -120,7 +120,7 @@ header {
 
 #menu {
   header {
-    background-image: url({{ 'assets/images/pasta-cooking.jpg' | relative_url }});
+    background-image: url('https://violino.s3.amazonaws.com/IMG_7139.jpg');
     background-size: 100%;
     background-attachment: fixed;
     @include media-breakpoint-down(xs) {
