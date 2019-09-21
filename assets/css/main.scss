@@ -129,8 +129,8 @@ header {
       // font-style: italic;
       font-weight: 700;
       @include media-breakpoint-down(xs) {
-        font-size: 8rem;
-        line-height: 7rem;
+        font-size: 6rem;
+        line-height: 5rem;
       }
       &.subtitle {
         font-size: 4rem;
@@ -198,7 +198,7 @@ header {
 }
 
 .footer {
-  background: $light_gray;
+  background: $white;
   p {
     color: $gray;
   }
