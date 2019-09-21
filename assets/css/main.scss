@@ -33,12 +33,19 @@
 
 .mobile-nav-button {
   position: fixed;
-  bottom: 0;
-  background: $charcoal;
-  color: $white;
   z-index: 4000;
   border-radius: 0;
   width: 100%;
+  &.top {
+    top: 0;
+    background: $white;
+    color: $charcoal;
+  }
+  &.bottom {
+    background: $charcoal;
+    color: $white;
+    bottom: 0;
+  }
 }
 
 nav {
