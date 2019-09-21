@@ -31,6 +31,16 @@
   z-index: -1;
 }
 
+.mobile-nav-button {
+  position: fixed;
+  bottom: 0;
+  background: $charcoal;
+  color: $white;
+  z-index: 4000;
+  border-radius: 0;
+  width: 100%;
+}
+
 nav {
   &.navbar {
     transition: 0.3s all ease-in-out;
