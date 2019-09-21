@@ -6,6 +6,7 @@ enforce_ssl: violinoristorante.com
 sass:
   sass_dir: _sass
 include: ['_pages']
-permalink: /:title/
+# permalink: /:title/
+permalinke: /
 kramdown:
   input: GFM
