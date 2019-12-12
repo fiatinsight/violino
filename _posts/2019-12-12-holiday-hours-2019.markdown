@@ -8,16 +8,17 @@ image: https://source.unsplash.com/AgWVcQz1bOA/1600x900
 ---
 We are OPEN Monday, December 23rd for lunch and dinner. Make your reservations today!
 
-Tuesday  Dec, 24
-Lunch 11:30-2:00
-Dinner 5:00-9:00
+**Tuesday Dec, 24**
+- Lunch 11:30-2:00
+- Dinner 5:00-9:00
 
-Wednesday Dec. 25 CLOSED
-Thursday Dec. 26 CLOSED
+**Wednesday Dec. 25 CLOSED**
 
-Tuesday Dec. 31
-Lunch 12;00-2:00
-Dinner 5:00-7:00
-NYE Wine Dinner 9:00-12:00 (Fixed menu, fixed price call for details)
+**Thursday Dec. 26 CLOSED**
 
-Wednesday Jan. 1 CLOSED
+**Tuesday Dec. 31**
+- Lunch 12:00-2:00
+- Dinner 5:00-7:00
+- NYE Wine Dinner 9:00-12:00 (Fixed menu, fixed price call for details)
+
+**Wednesday Jan. 1 CLOSED**
