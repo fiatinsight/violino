@@ -25,18 +25,16 @@
   <script src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
   <script src="{{ 'assets/js/fontawesome-all.min.js' | relative_url }}"></script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154454734-1"></script>
   <script>
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', 'UA-139607394-1', 'auto');
-  ga('require', 'eventTracker');
-  ga('require', 'outboundLinkTracker');
-  ga('require', 'outboundFormTracker');
-  ga('require', 'outboundLinkTracker');
-  ga('require', 'maxScrollTracker');
-  ga('require', 'mediaQueryTracker');
-  ga('send', 'pageview');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154454734-1');
   </script>
 
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script async src="{{ 'assets/js/autotrack.js' | relative_url }}"></script>
+  <!-- <script async src="https://www.google-analytics.com/analytics.js"></script> -->
+  <!-- <script async src="{{ 'assets/js/autotrack.js' | relative_url }}"></script> -->
 </head>
