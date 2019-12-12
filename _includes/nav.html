@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top d-none d-sm-flex">
   <div class="container">
-    <a class="navbar-brand" href="/">Violino</a>
+    <a class="navbar-brand" href="/" onclick="gtag('event', 'view_home', { event_category: 'engagement', event_label: 'Navbar item' });">Violino</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-top" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="nav-top">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{ 'menu' | relative_url }}">Menu</a>
+          <a class="nav-link" href="{{ 'menu' | relative_url }}" onclick="gtag('event', 'view_menu', { event_category: 'engagement', event_label: 'Navbar item' });">Menu</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="{{ 'family' | relative_url }}">La Famiglia</a>
@@ -17,13 +17,13 @@
           <a class="nav-link" href="/#reservations">Make a Reservation</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/Violino-Ristorante-Italiano-129705957055801/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a class="nav-link" href="https://www.facebook.com/Violino-Ristorante-Italiano-129705957055801/" target="_blank" onclick="gtag('event', 'view_facebook', { event_category: 'engagement', event_label: 'Navbar item' });"><i class="fab fa-facebook"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.yelp.com/biz/violino-ristorante-italiano-winchester" target="_blank"><i class="fab fa-yelp text-red"></i></a>
+          <a class="nav-link" href="https://www.yelp.com/biz/violino-ristorante-italiano-winchester" target="_blank" onclick="gtag('event', 'view_yelp', { event_category: 'engagement', event_label: 'Navbar item' });"><i class="fab fa-yelp text-red"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.tripadvisor.com/Restaurant_Review-g58318-d514664-Reviews-Violino_Ristorante_Italiano-Winchester_Virginia.html" target="_blank"><i class="fab fa-tripadvisor text-green"></i></a>
+          <a class="nav-link" href="https://www.tripadvisor.com/Restaurant_Review-g58318-d514664-Reviews-Violino_Ristorante_Italiano-Winchester_Virginia.html" target="_blank" onclick="gtag('event', 'view_tripadvisor', { event_category: 'engagement', event_label: 'Navbar item' });"><i class="fab fa-tripadvisor text-green"></i></a>
         </li>
       </ul>
     </div>
