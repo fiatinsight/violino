@@ -1,0 +1,34 @@
+---
+layout: post
+permalink: february-2020
+title:  "February"
+date:   2020-01-27 06:06:53 -0400
+image: https://source.unsplash.com/GF1ndoCM7PY/1600x900
+# categories:
+---
+
+**Chocolate Escape**
+
+*February 8th, 2-5pm*
+
+Sample chocolate desserts at participating downtown restaurants, enjoy special discounts and treats at participating shops, and pamper yourself during the seventh annual <a href="https://oldtownwinchesterva.com/events/major-events/chocolate-escape/" target="blank">Chocolate Escape</a>! Follow the red balloons to participating locations!
+
+___
+
+**Valentine's Day**
+
+*February 14th*
+
+Make your Valentine's Day reservation as soon as possible &mdash; <a href="tel:5406678006" onclick="gtag('event', 'call', { event_category: 'engagement', event_label: 'Post CTA' });">call now</a>! We're offering lunch and dinner specials on February 13th, 14th, and 15th.
+
+---
+
+**Restaurant Week**
+
+*February 18th-22nd*
+
+Visit us for <a href="https://www.winchesterrestaurantweek.com/participate/" target="blank">Restaurant Week</a> and enjoy a wonderful three-course meal for just $35/person. Come discover the best of Violino and Old Town Winchester!
+
+---
+
+![alt-text](https://source.unsplash.com/GF1ndoCM7PY/550x400 "Valentine's Day 2020")
