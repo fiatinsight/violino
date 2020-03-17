@@ -181,6 +181,29 @@ header {
   }
 }
 
+#wholesale {
+  header {
+    background-image: url('https://source.unsplash.com/WfSZ_XNPViY/1700x800');
+    background-size: 100%;
+    background-attachment: fixed;
+    @include media-breakpoint-down(xs) {
+      background-size: cover;
+      background-position: -500px;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+    }
+  }
+  .callout {
+    h2 {
+      font-size: 4rem;
+    }
+    h4 {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  }
+}
+
 .callout {
   font-family: $header;
   @include media-breakpoint-down(xs) {
