@@ -119,17 +119,26 @@ layout: default
     <div class="container-fluid">
       <div class="row justify-content-left">
         <div class="col-lg-6">
-          <a href="/holiday-hours-2019" onclick="gtag('event', 'view_post', { event_category: 'engagement', event_label: 'Homepage bottom (image)' });">
-            <img src="https://source.unsplash.com/cI5KB6XF-EI/700x500", width="100%" />
-          </a>
+          <img id="article_image" src="", width="100%" />
         </div>
         <div class="col-lg-5 callout p-5">
           <hr class="d-none d-lg-block m-5">
-          <h2><a href="/covid-19" onclick="gtag('event', 'view_post', { event_category: 'engagement', event_label: 'Homepage bottom (title)' });"><i class="fal fa-calendar mr-3"></i>Our Safety Response to COVID-19</a></h2>
-          <p>Our first priority is the health and safety of our staff and guests. While health and safety standards are followed on a daily basis at our restaurant, we are taking additional measures to ensure everyone stays healthy during this uncertain time.</p>
-          <a href="/covid-19" class="btn btn-warning mt-3" onclick="gtag('event', 'view_post', { event_category: 'engagement', event_label: 'Homepage bottom (button)' });">Read more<i class="fal fa-long-arrow-right ml-2"></i></a>
+          <h2><i class="fal fa-calendar mr-3"></i><span id="article_title"></span></h2>
+          <p><span id="article_excerpt"></span></p>
+          <a id="article_link" href="" class="btn btn-secondary mt-3" onclick="gtag('event', 'view_post', { event_category: 'engagement', event_label: 'Homepage bottom (button)' });">Read more<i class="fal fa-long-arrow-right ml-2"></i></a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+  $.getJSON('https://winclocal.com/api/businesses/v1/articles/latest?token=D4YjAhEo4nlIwYavq7yrWsgEgo9KkIN3xhWni5XtgvAUmvNY9m', function(data) {
+    $.each(data, function(index, element) {
+      $('#article_title').text(element.attributes.title);
+      $('#article_excerpt').text(element.attributes.excerpt);
+      $('#article_link').attr("href", "https://winclocal.com" + element.attributes.link_extension);
+      $('#article_image').attr("src", element.attributes.image_path);
+    });
+  });
+</script>
